@@ -166,7 +166,7 @@ dependencies = [
 
 [[package]]
 name = "clau"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "clau-core",
  "clau-mcp",
@@ -180,7 +180,7 @@ dependencies = [
 
 [[package]]
 name = "clau-core"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "async-trait",
  "bytes",
@@ -196,7 +196,7 @@ dependencies = [
 
 [[package]]
 name = "clau-macros"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -206,7 +206,7 @@ dependencies = [
 
 [[package]]
 name = "clau-mcp"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "async-trait",
  "clau-core",
@@ -224,7 +224,7 @@ dependencies = [
 
 [[package]]
 name = "clau-runtime"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "async-trait",
  "clau-core",
