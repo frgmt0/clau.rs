@@ -1,0 +1,32 @@
+[package]
+name = "clau-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+authors.workspace = true
+description = "Runtime for executing Claude AI conversations and tool interactions"
+keywords = ["runtime", "ai", "claude", "tools"]
+categories = ["api-bindings", "development-tools"]
+
+[dependencies]
+clau-core = { version = "0.1.0", path = "../clau-core" }
+clau-mcp = { version = "0.1.0", path = "../clau-mcp" }
+
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+futures = { workspace = true }
+async-trait = { workspace = true }
+tracing = { workspace = true }
+reqwest = { version = "0.12", features = ["json", "stream"] }
+url = "2.5"
+which = "6.0"
+
+[dev-dependencies]
+proptest = { workspace = true }
+wiremock = { workspace = true }
+insta = { workspace = true }

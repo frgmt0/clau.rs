@@ -1,0 +1,30 @@
+[package]
+name = "clau-mcp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+authors.workspace = true
+description = "Model Context Protocol (MCP) implementation for Claude interactions"
+keywords = ["mcp", "protocol", "claude", "tools"]
+categories = ["api-bindings", "development-tools"]
+
+[dependencies]
+clau-core = { path = "../clau-core" }
+
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+futures = { workspace = true }
+async-trait = { workspace = true }
+tracing = { workspace = true }
+jsonrpc-core = "18.0"
+jsonrpc-core-client = "18.0"
+tokio-util = { version = "0.7", features = ["codec"] }
+
+[dev-dependencies]
+proptest = { workspace = true }
+tokio = { workspace = true, features = ["test-util"] }
