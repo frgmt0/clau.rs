@@ -163,6 +163,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ## Links
 
-- [Documentation](https://docs.rs/clau) <- Not Up Yet
+- [Documentation](https://docs.rs/clau)
 - [Repository](https://github.com/frgmt0/clau.rs)
 - [Claude Code](https://github.com/anthropics/claude-code)
