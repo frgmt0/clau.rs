@@ -13,13 +13,13 @@ if ! cargo login --help > /dev/null 2>&1; then
     exit 1
 fi
 
-# Dry run first
+# Dry run first (only for crates with no dependencies)
 echo "🧪 Performing dry run..."
-cargo publish --dry-run -p clau-core
-cargo publish --dry-run -p clau-mcp  
-cargo publish --dry-run -p clau-macros
-cargo publish --dry-run -p clau-runtime
-cargo publish --dry-run -p clau
+cargo publish --dry-run -p clau-core --allow-dirty
+cargo publish --dry-run -p clau-mcp --allow-dirty
+cargo publish --dry-run -p clau-macros --allow-dirty
+
+echo "ℹ️  Note: clau-runtime and clau cannot be dry-run tested until dependencies are published"
 
 echo "✅ Dry run successful!"
 

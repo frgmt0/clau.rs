@@ -12,7 +12,7 @@ keywords = ["mcp", "protocol", "claude", "tools"]
 categories = ["api-bindings", "development-tools"]
 
 [dependencies]
-clau-core = { path = "../clau-core" }
+clau-core = { version = "0.1.0", path = "../clau-core" }
 
 tokio = { workspace = true }
 serde = { workspace = true }
