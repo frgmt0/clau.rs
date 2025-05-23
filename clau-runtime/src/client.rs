@@ -14,6 +14,7 @@ use tokio::sync::mpsc;
 /// Basic usage:
 /// ```rust,no_run
 /// # use clau_core::*;
+/// # use clau_runtime::Client;
 /// # #[tokio::main]
 /// # async fn main() -> clau_core::Result<()> {
 /// let client = Client::new(Config::default());
@@ -26,6 +27,7 @@ use tokio::sync::mpsc;
 /// With configuration:
 /// ```rust,no_run
 /// # use clau_core::*;
+/// # use clau_runtime::Client;
 /// # #[tokio::main]
 /// # async fn main() -> clau_core::Result<()> {
 /// let client = Client::builder()
@@ -60,6 +62,7 @@ impl Client {
     /// 
     /// ```rust,no_run
     /// # use clau_core::*;
+    /// # use clau_runtime::Client;
     /// # #[tokio::main]
     /// # async fn main() -> clau_core::Result<()> {
     /// let client = Client::new(Config::default());
@@ -83,6 +86,7 @@ impl Client {
     /// 
     /// ```rust,no_run
     /// # use clau_core::*;
+    /// # use clau_runtime::Client;
     /// # #[tokio::main]
     /// # async fn main() -> clau_core::Result<()> {
     /// let client = Client::new(Config::default());
@@ -106,6 +110,7 @@ impl Client {
     /// 
     /// ```rust,no_run
     /// # use clau_core::*;
+    /// # use clau_runtime::Client;
     /// # #[tokio::main]
     /// # async fn main() -> clau_core::Result<()> {
     /// let client = Client::builder()
